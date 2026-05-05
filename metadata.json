@@ -1,0 +1,7 @@
+{
+  "name": "AgroScan Pro: Crop Disease Predictor",
+  "description": "An AI-powered mobile application for instant detection of crop diseases using leaf image analysis with Gemini 3 Flash.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
