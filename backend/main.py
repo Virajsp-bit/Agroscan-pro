@@ -1,4 +1,8 @@
+from pathlib import Path
+_HERE = Path(__file__).resolve().parent
 _EXPORTS_DIR = _HERE / "exports"
+_MODEL_PATH = _EXPORTS_DIR / "final_model_densenet.pkl"
+
 import os
 os.environ["KERAS_BACKEND"] = "torch"
 
@@ -37,9 +41,9 @@ _result_cache: Dict[str, dict] = {}
 _CACHE_MAX_SIZE = 50  # keep last 50 unique images
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
-_HERE = Path(__file__).resolve().parent
-_EXPORTS_DIR = _HERE.parent / "exports"
-_MODEL_PATH = _EXPORTS_DIR / "final_model_densenet.pkl"
+# _HERE = Path(__file__).resolve().parent
+# _EXPORTS_DIR = _HERE.parent / "exports"
+# _MODEL_PATH = _EXPORTS_DIR / "final_model_densenet.pkl"
 
 # ─── Class names ──────────────────────────────────────────────────────────────
 CLASS_NAMES = [
